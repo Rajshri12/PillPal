@@ -4,13 +4,13 @@
 BRANCH="main"
 START_DATE="2024-12-10"
 END_DATE="2025-03-15"
-TOTAL_COMMITS=30
+MAX_COMMITS=90
 
-# Set your Git identity
+# Git identity
 git config user.name "Rajshri12"
 git config user.email "rajshreeguru0@gmail.com"
 
-# Generate commit messages relevant to PillPal
+# Commit message pool
 messages=(
   "Initial folder structure"
   "Add WhatsApp reminder script"
@@ -42,47 +42,71 @@ messages=(
   "Add user health score generation"
   "Final tweaks before demo"
   "Polish UX for reminders"
+  "Update daily symptom schema"
+  "Refactor report formatting"
+  "Add log exporter tool"
+  "Write AI prompt library"
+  "Split WhatsApp logic module"
+  "Optimize DB queries"
+  "Document GenAI features"
+  "Add timezone config support"
+  "Secure API token handling"
+  "Add feedback response handler"
+  "Write README section: features"
+  "Write README section: setup"
+  "Write README section: roadmap"
+  "Fix reminder overlap bug"
+  "Add PDF report generation"
+  "Refactor CLI args for patients"
+  "Schedule doctor reminders"
+  "Bugfix: date conversion issue"
+  "Refactor config loader"
+  "Improve NLP prompt precision"
+  "Reduce duplicate messages"
+  "Compress health logs"
 )
 
-# Helper: generate random time (between 9:00 and 19:00)
+# Create file structure
+mkdir -p db templates logs
+touch app.py scheduler.py genai_helper.py whatsapp_bot.py .env requirements.txt README.md logs/chat_log.txt
+
+# Helper: generate random time
 generate_random_time() {
     hour=$((RANDOM % 10 + 9))
     min=$((RANDOM % 60))
     printf "%02d:%02d:00" $hour $min
 }
 
-# Create dummy files if needed
-mkdir -p db templates logs
-touch app.py scheduler.py genai_helper.py whatsapp_bot.py .env requirements.txt README.md
-
-# Loop over dates between start and end
+# Commit loop
 current_date="$START_DATE"
 commit_index=0
 
-while [[ "$current_date" < "$END_DATE" && $commit_index -lt $TOTAL_COMMITS ]]; do
-    # Randomly skip some days
-    if (( RANDOM % 10 < 3 )); then
-        current_date=$(date -I -d "$current_date + 1 day")
-        continue
+while [[ "$current_date" < "$END_DATE" && $commit_index -lt $MAX_COMMITS ]]; do
+    # 70% chance to commit today
+    if (( RANDOM % 100 < 70 )); then
+        # Random message
+        msg="${messages[$((RANDOM % ${#messages[@]}))]}"
+
+        # Random time
+        time=$(generate_random_time)
+        full_datetime="${current_date}T$time"
+
+        # Simulate work
+        echo "$msg at $full_datetime" >> logs/chat_log.txt
+
+        # Git commit
+        git add .
+        GIT_AUTHOR_DATE="$full_datetime" GIT_COMMITTER_DATE="$full_datetime" \
+        git commit -m "$msg"
+
+        echo "✅ Commit #$((commit_index+1)) on $full_datetime — $msg"
+
+        ((commit_index++))
     fi
-
-    # Modify a dummy file
-    echo "${messages[$commit_index]}" >> logs/chat_log.txt
-
-    # Random time for the day
-    rand_time=$(generate_random_time)
-    full_datetime="${current_date}T$rand_time"
-
-    # Stage and commit
-    git add .
-    GIT_AUTHOR_DATE="$full_datetime" GIT_COMMITTER_DATE="$full_datetime" \
-    git commit -m "${messages[$commit_index]}"
-
-    echo "✅ Commit $((commit_index+1)) on $full_datetime: ${messages[$commit_index]}"
 
     # Move to next day
     current_date=$(date -I -d "$current_date + 1 day")
-    ((commit_index++))
 done
 
-echo "🎯 All $commit_index commits created locally. You can now review with: git log --date=iso"
+echo "🎯 Total commits made: $commit_index"
+echo "📝 You can now run: git log --pretty=format:'%ad - %s' --date=iso"
