@@ -1,2 +1,3 @@
 Initial folder structure
 Add WhatsApp reminder script
+Set up GenAI query function
