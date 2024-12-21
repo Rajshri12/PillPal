@@ -37,3 +37,4 @@ Schedule doctor reminders at 2024-12-16T10:09:00
 Bugfix: date conversion issue at 2024-12-18T17:43:00
 Add PDF report generation at 2024-12-19T17:51:00
 Add timezone config support at 2024-12-20T16:59:00
+Add PDF report generation at 2024-12-21T17:25:00
