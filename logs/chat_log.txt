@@ -4,3 +4,4 @@ Set up GenAI query function
 Create DB model for medicine logs
 Implement daily reminder system
 Add intake logging logic
+Send report as daily message
