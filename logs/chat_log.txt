@@ -38,3 +38,4 @@ Bugfix: date conversion issue at 2024-12-18T17:43:00
 Add PDF report generation at 2024-12-19T17:51:00
 Add timezone config support at 2024-12-20T16:59:00
 Add PDF report generation at 2024-12-21T17:25:00
+Handle missed medicines alert at 2024-12-23T13:20:00
