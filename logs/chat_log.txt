@@ -6,3 +6,4 @@ Implement daily reminder system
 Add intake logging logic
 Send report as daily message
 Add GenAI-based health insight generator
+Fix timezone issues in reminders
