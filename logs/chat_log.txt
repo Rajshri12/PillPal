@@ -8,3 +8,4 @@ Send report as daily message
 Add GenAI-based health insight generator
 Fix timezone issues in reminders
 Add symptom logging CLI
+Store user replies in DB
