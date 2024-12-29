@@ -10,3 +10,4 @@ Fix timezone issues in reminders
 Add symptom logging CLI
 Store user replies in DB
 Add health report template
+Add follow-up reminder logic
