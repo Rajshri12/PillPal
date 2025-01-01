@@ -12,3 +12,4 @@ Store user replies in DB
 Add health report template
 Add follow-up reminder logic
 Improve message formatting
+Fix bug in scheduler
