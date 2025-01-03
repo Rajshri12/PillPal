@@ -14,3 +14,4 @@ Add follow-up reminder logic
 Improve message formatting
 Fix bug in scheduler
 Add test cases for reminder module
+Auto-generate health summary
