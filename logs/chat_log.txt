@@ -17,3 +17,4 @@ Add test cases for reminder module
 Auto-generate health summary
 Update README with features
 Fix .env loading
+Improve GenAI response prompt
