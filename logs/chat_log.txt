@@ -18,3 +18,4 @@ Auto-generate health summary
 Update README with features
 Fix .env loading
 Improve GenAI response prompt
+Set up cron scheduler
