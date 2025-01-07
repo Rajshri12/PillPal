@@ -50,3 +50,4 @@ Store user replies in DB at 2025-01-03T18:56:00
 Fix bug in scheduler at 2025-01-04T14:18:00
 Handle missed medicines alert at 2025-01-05T18:21:00
 Compress health logs at 2025-01-06T10:44:00
+Add timezone config support at 2025-01-07T17:00:00
