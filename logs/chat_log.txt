@@ -19,3 +19,4 @@ Update README with features
 Fix .env loading
 Improve GenAI response prompt
 Set up cron scheduler
+Handle missed medicines alert
