@@ -22,3 +22,4 @@ Set up cron scheduler
 Handle missed medicines alert
 Style WhatsApp message layout
 Add WhatsApp confirmation button handler
+Generate chart from intake logs
