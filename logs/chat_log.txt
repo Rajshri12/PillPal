@@ -58,3 +58,4 @@ Refactor CLI args for patients at 2025-01-11T16:29:00
 Final tweaks before demo at 2025-01-12T17:19:00
 Add test cases for reminder module at 2025-01-14T09:43:00
 Write README section: roadmap at 2025-01-16T17:22:00
+Improve AI response for symptom queries at 2025-01-17T10:14:00
