@@ -24,3 +24,4 @@ Style WhatsApp message layout
 Add WhatsApp confirmation button handler
 Generate chart from intake logs
 Improve AI response for symptom queries
+Cleanup old logs automatically
