@@ -27,3 +27,4 @@ Improve AI response for symptom queries
 Cleanup old logs automatically
 Add user health score generation
 Final tweaks before demo
+Polish UX for reminders
