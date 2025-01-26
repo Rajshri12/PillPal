@@ -65,3 +65,4 @@ Reduce duplicate messages at 2025-01-22T14:40:00
 Fix reminder overlap bug at 2025-01-23T13:09:00
 Add log exporter tool at 2025-01-24T10:18:00
 Refactor config loader at 2025-01-25T14:39:00
+Final tweaks before demo at 2025-01-26T17:15:00
