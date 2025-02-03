@@ -69,3 +69,4 @@ Final tweaks before demo at 2025-01-26T17:15:00
 Add health report template at 2025-01-27T09:27:00
 Add symptom logging CLI at 2025-01-29T18:18:00
 Final tweaks before demo at 2025-02-01T15:14:00
+Update README with features at 2025-02-03T18:08:00
