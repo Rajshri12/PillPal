@@ -72,3 +72,4 @@ Final tweaks before demo at 2025-02-01T15:14:00
 Update README with features at 2025-02-03T18:08:00
 Add PDF report generation at 2025-02-04T16:29:00
 Reduce duplicate messages at 2025-02-05T14:36:00
+Add WhatsApp reminder script at 2025-02-06T12:52:00
