@@ -77,3 +77,4 @@ Optimize DB queries at 2025-02-07T17:34:00
 Schedule doctor reminders at 2025-02-08T10:41:00
 Add log exporter tool at 2025-02-09T16:49:00
 Fix reminder overlap bug at 2025-02-10T12:03:00
+Set up GenAI query function at 2025-02-11T11:14:00
