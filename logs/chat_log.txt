@@ -99,3 +99,4 @@ Reduce duplicate messages at 2025-03-08T12:09:00
 Send report as daily message at 2025-03-09T14:59:00
 Send report as daily message at 2025-03-10T10:06:00
 Fix reminder overlap bug at 2025-03-11T10:24:00
+Refactor config loader at 2025-03-12T18:12:00
